@@ -1,0 +1,20 @@
+# External CFD source data and generated numeric intermediates
+/cylinder2d_vti/
+*.vti
+*.npy
+*.npz
+/output/
+
+# Model checkpoints and Python runtime artifacts
+*.pt
+__pycache__/
+*.py[cod]
+
+# Retain only comparison documentation and figures from generated results
+/results/
+!/results/
+/results/*/
+!/results/comparison/
+/results/comparison/*
+!/results/comparison/*.png
+!/results/comparison/evaluation_report.md
