@@ -315,7 +315,8 @@ def main():
                 "không thể tạo báo cáo so sánh đủ cả ba mô hình."
             )
         data[m] = got
-        print(f"{LABELS[m]}: {got[0].shape[0]} windows test, lưới {got[3]}x{got[4]}")
+        print(f"{LABELS[m]}: {got[0].shape[0]} windows test, "
+              f"lưới so sánh chung {dc.NDSX}x{dc.NDSY}")
 
     starts = data[MODELS[0]][2]
     for m in MODELS[1:]:
